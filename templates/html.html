@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course-O-Rama</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='cs.css') }}">
+</head>
+<body>
+    <h1 id="class1">Course-O-Rama</h1>
+
+    <p id="class2">Hello user! What areas interest you?</p>
+    <form id="search-container-1" method="POST">
+        <input type="text" name="search1" class="search-bar" placeholder="Area 1">
+        <input type="text" name="search2" class="search-bar" placeholder="Area 2">
+        <input type="text" name="search3" class="search-bar" placeholder="Area 3">
+        <button type="submit" name="submit_button" value="interests">Search by Interests</button>
+    </form>
+
+    {% if interest_recommendations %}
+    <h2>Recommended Courses Based on Your Interests:</h2>
+    <ul>
+        {% for course in interest_recommendations %}
+            <li>
+                <strong>{{ course['Title'] }}</strong><br>
+                URL: <a href="{{ course['URL'] }}" target="_blank">{{ course['URL'] }}</a><br>
+                Short Intro: {{ course['Short Intro'] }}<br>
+                Category: {{ course['Category'] }}<br>
+                Sub-Category: {{ course['Sub-Category'] }}<br>
+                Language: {{ course['Language'] }}<br>
+                Skills: {{ course['Skills'] }}<br>
+                Rating: {{ course['Rating'] }}<br>
+                Number of Viewers: {{ course['Number of viewers'] }}<br>
+                Duration: {{ course['Duration'] }}<br>
+                Site: {{ course['Site'] }}<br>
+                Level: {{ course['Level'] }}<br>
+                Price: {{ course['Price'] }}<br>
+                Certificate: {{ course['Certificate'] }}<br>
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <p id="class2">What course do you want to study?</p>
+    <form id="search-container" method="POST">
+        <input type="text" name="course_search" class="search-bar" placeholder="Enter your course">
+        <button type="submit" name="submit_button" value="course">Search by Course</button>
+    </form>
+
+    {% if course_recommendations %}
+    <h2>Similar Courses:</h2>
+    <ul>
+        {% for course in course_recommendations %}
+            <li>
+                <strong>{{ course['Title'] }}</strong><br>
+                URL: <a href="{{ course['URL'] }}" target="_blank">{{ course['URL'] }}</a><br>
+                Short Intro: {{ course['Short Intro'] }}<br>
+                Category: {{ course['Category'] }}<br>
+                Sub-Category: {{ course['Sub-Category'] }}<br>
+                Language: {{ course['Language'] }}<br>
+                Skills: {{ course['Skills'] }}<br>
+                Rating: {{ course['Rating'] }}<br>
+                Number of Viewers: {{ course['Number of viewers'] }}<br>
+                Duration: {{ course['Duration'] }}<br>
+                Site: {{ course['Site'] }}<br>
+                Level: {{ course['Level'] }}<br>
+                Price: {{ course['Price'] }}<br>
+                Certificate: {{ course['Certificate'] }}<br>
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+        {% endif %}
+</body>
+</html>
