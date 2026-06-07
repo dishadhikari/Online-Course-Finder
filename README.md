@@ -1,4 +1,4 @@
-# 🎓 Course-O-Rama — Smart Online Course Recommendation System 🚀
+# 🎓 Course-O-Rama — Smart Online Course Recommendation System 
 
 **Course-O-Rama** is an intelligent online course discovery platform that helps learners find the most relevant courses based on their interests or a specific course topic. Using **Natural Language Processing (NLP)** and **Machine Learning**, the system analyzes user input and recommends similar courses from a curated dataset of online learning resources.
 
