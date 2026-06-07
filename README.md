@@ -2,7 +2,7 @@
 
 **Course-O-Rama** is an intelligent online course discovery platform that helps learners find the most relevant courses based on their interests or a specific course topic. Using **Natural Language Processing (NLP)** and **Machine Learning**, the system analyzes user input and recommends similar courses from a curated dataset of online learning resources.
 
-Built with ❤️ using **Python, Flask, Scikit-learn, NLTK, and Pandas**.
+Built using **Python, Flask, Scikit-learn, NLTK, and Pandas**.
 
 🌐 **GitHub Repository:** https://github.com/your-username/course-o-rama
 
