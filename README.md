@@ -4,7 +4,7 @@
 
 Built using **Python, Flask, Scikit-learn, NLTK, and Pandas**.
 
-🌐 **GitHub Repository:** https://github.com/your-username/course-o-rama
+🌐 **GitHub Repository:** https://github.com/dishadhikari/Online-Course-Finder
 
 ---
 
